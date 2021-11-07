@@ -1,5 +1,6 @@
-d = float(input('Quantos reais você tem na carteira? '))
-dolar = 5.56 #Cotação do dia que foi criado o código
-valor=(d/dolar) #Faz calculo de quantos dolares é possivel comprar com o dinheiro na carteira
-
-print('Você pode comprar US$ {:.2f} dolares com R$ {} '.format(valor,d))
+d = float(input('Quantos reais você tem na carteira? R$'))
+dolar = d/5.56 #Cotação do dia que foi criado o código
+euro = d/6
+pm = d*3.67
+print('Você pode comprar com R$ {} '.format(d))
+print('US$ {:.2f} \n€ {:.2f} \nMX$ {:.2f}'.format(dolar,euro,pm))
